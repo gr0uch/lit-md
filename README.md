@@ -27,7 +27,7 @@ Add one and one together.
 
     1 + 1
 
-That's it!
+That's all!
 ```
 
 This outputs:
