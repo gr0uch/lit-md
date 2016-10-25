@@ -9,7 +9,8 @@
     "url": "https://github.com/sapeien/lit-md"
   },
   "scripts": {
-    "build": "./node_modules/sigil-cli/sigil lit-md.lisp | (echo \"#!/usr/bin/env node\n\" && cat) > lit-md.js"
+    "build": "./node_modules/sigil-cli/sigil lit-md.lisp | (echo \"#!/usr/bin/env node\n\" && cat) > lit-md.js",
+    "test": "./lit-md.js < README.md"
   },
   "devDependencies": {
     "sigil-cli": "^1.0.6"
