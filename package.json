@@ -1,0 +1,25 @@
+{
+  "name": "lit-md",
+  "description": "Literate programming done cheaply.",
+  "version": "0.0.1",
+  "license": "GPL-3.0",
+  "bin": "./lit-md.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sapeien/lit-md"
+  },
+  "scripts": {
+    "build": "./node_modules/sigil-cli/sigil lit-md.lisp | (echo \"#!/usr/bin/env node\n\" && cat) > lit-md.js"
+  },
+  "devDependencies": {
+    "sigil-cli": "^1.0.6"
+  },
+  "engines": {
+    "node": ">=4.6.0"
+  },
+  "keywords": [
+    "literate",
+    "programming",
+    "markdown"
+  ]
+}

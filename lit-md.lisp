@@ -1,0 +1,8 @@
+(defvar *indent* (regex "^    "))
+((@ ((@ (require 'readline) create-interface)
+     (create input (@ process stdin)))
+    on)
+ 'line (lambda (line)
+         (if ((@ *indent* test) line)
+             ((@ process stdout write)
+              (+ ((@ line replace) *indent* "") #\linefeed)))))
